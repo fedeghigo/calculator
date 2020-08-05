@@ -32,14 +32,14 @@ rangetablei=ranget*tables
 stutturafinali=page*struttura
 giorniimporti=importt*document
 
-timetable=st.write("giornate per tabelle:",tables*minutixtab)
+timetable=st.write("days fot tables:",tables*minutixtab)
 #st.text(int(document)+int(page)+int(tables))
-rangetable=st.write("giornate per range:",ranget*tables)
-stutturafinal=st.write("giornate per struttura:",page*struttura)
-giorniimport=st.write("giornate per import:",importt*document)
+rangetable=st.write("days for range:",ranget*tables)
+stutturafinal=st.write("days for struttura:",page*struttura)
+giorniimport=st.write("days for import:",importt*document)
 
 
-st.sidebar.title("Formazione")
+st.sidebar.title("Training")
 amministratori=st.sidebar.text_input("number of group for admin?",value=2)
 
 contributor=st.sidebar.text_input("number of group for contributor?",value=10)
@@ -47,8 +47,8 @@ contributor=st.sidebar.text_input("number of group for contributor?",value=10)
 
 amministratori=float(amministratori)
 contributor=float(contributor)
-ammtot=st.write("giornate per train admin:",amministratori*(0.5))
-contributortot=st.write("giornate per train contrib:",contributor*(0.25))
+ammtot=st.write("days for train admin:",amministratori*(0.5))
+contributortot=st.write("days for train contrib:",contributor*(0.25))
 
 
 array=pd.DataFrame([tables*minutixtab,ranget*tables,page*struttura,importt*document,(ammtot),(contributortot)], index=["table","range","struttura","import","train admin","train contrib"])
