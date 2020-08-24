@@ -15,8 +15,8 @@ tables=float(tables)
 
 
 st.sidebar.title("time needed for single doc")
-minutixtab=st.sidebar.text_input("how long for import a table in min?",value=17)
-ranget=st.sidebar.text_input("how long for make a range in min?",value=9)
+minutixtab=st.sidebar.text_input("how long for import a table in min?",value=15)
+ranget=st.sidebar.text_input("how long for make a range in min?",value=5)
 struttura=st.sidebar.text_input("how long for make the structure in min?",value=7)
 importt=st.sidebar.text_input("how long for import in day?",value=1)
 
